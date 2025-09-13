@@ -41,7 +41,25 @@
 ## 3. Gestion des Sites Web
 
 ### Activer/Désactiver un Site (Debian/Ubuntu)
-```bash
+
 sudo a2ensite nom_du_site.conf   # Active un site
 sudo a2dissite nom_du_site.conf  # Désactive un site
 sudo systemctl reload apache2    # Recharge Apache
+
+### 4. Tester la syntaxe de la configuration
+
+sudo apache2ctl configtest
+
+### 5. Redémarrage en douceur
+
+sudo systemctl reload apache2
+# OU (équivalenti en prod)
+sudo apache2ctl graceful
+
+### 6. Redémarrage complet
+
+sudo systemctl restart apache2
+
+### 7. Logs
+
+sudo tail -f /var/log/apache2/error.log
