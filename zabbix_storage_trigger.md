@@ -81,6 +81,3 @@
   Créer un graphique dans le template avec les items `vfs.fs.size[*,pused]` pour visualiser l'évolution.
 
 ---
-**Prochaine étape** :
-Souhaitez-vous que je détaille la configuration d'une règle de découverte automatique pour les partitions, ou préférez-vous adapter ce template pour un cas spécifique (Windows, NAS, etc.) ?
-
