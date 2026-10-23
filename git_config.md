@@ -28,3 +28,10 @@ git config user.email "ton@email.com"
 ```
 git config --list
 ```
+
+### Modifier le commentaire du dernier commit
+
+```
+git commit --amend -m "first commit"
+git push --force-with-lease origin main
+```
